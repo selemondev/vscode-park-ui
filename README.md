@@ -63,14 +63,14 @@ import type { AlertProps } from '~/components/ui/alert',
 import * as Alert from '~/components/ui/alert'
 
 // park-ui-alert
- <Alert.Root {...props}>",
-    <Alert.Icon asChild>",
-    <InfoIcon />",
-    </Alert.Icon>",
-    <Alert.Content>",
-    <Alert.Title>Browser Update available</Alert.Title>",
-    <Alert.Description>For the best experience, please update your browser.</Alert.Description>",
-     </Alert.Content>",
+<Alert.Root {...props}>,
+<Alert.Icon asChild>,
+<InfoIcon />,
+</Alert.Icon>,
+<Alert.Content>,
+<Alert.Title>Browser Update available</Alert.Title>,
+<Alert.Description>For the best experience, please update your browser.</Alert.Description>,
+</Alert.Content>,
 </Alert.Root>"
 ```
 
