@@ -1,0 +1,119 @@
+{
+  "name": "vscode-park-ui",
+  "displayName": "park/ui",
+  "description": "Integrate components and snippets from Park UI directly into your IDE ✨",
+  "publisher": "Selemondev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selemondev/vscode-park-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/selemondev/vscode-park-ui/issues",
+    "email": "selemonsrdev@gmail.com"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "react",
+    "park-ui-react",
+    "park-ui-react-snippet",
+    "park-ui-react-component-snippets",
+    "snippet",
+    "snippets",
+    "react snippets",
+    "park-ui snippets",
+    "react typescript snippets"
+  ],
+  "activationEvents": [],
+  "icon": "images/icon.png",
+  "main": "./dist/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/help.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/help.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/imports.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/imports.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/usage.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/usage.code-snippets"
+      }
+    ],
+    "commands": [
+      {
+        "command": "park-ui.initCli",
+        "title": "park/ui: Install CLI"
+      },
+      {
+        "command": "park-ui.addNewComponent",
+        "title": "park/ui: Add New Component"
+      },
+      {
+        "command": "park-ui.addMultipleComponents",
+        "title": "park/ui: Add Multiple Components"
+      },
+      {
+        "command": "park-ui.gotoComponentDoc",
+        "title": "park/ui: Open Component Documentation"
+      },
+      {
+        "command": "park-ui.reloadComponentList",
+        "title": "park/ui: Reload Component List"
+      },
+      {
+        "command": "park-ui.gotoDoc",
+        "title": "park/ui: Open Documentation"
+      },
+
+      {
+        "command": "park-ui.installAllComponents",
+        "title": "park/ui: Install All Components"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.54.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "ofetch": "^1.3.3"
+  }
+}

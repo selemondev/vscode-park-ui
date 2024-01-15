@@ -1,0 +1,403 @@
+{
+    "Accordion": {
+      "prefix": ["park-i-accordion", "park-accordion"],
+      "body": [
+        "import { ChevronDownIcon } from 'lucide-react'",
+        "import type { AccordionProps } from '~/components/ui/accordion'",
+        "import * as Accordion from '~/components/ui/accordion'",
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/accordion"
+    },
+  
+    "Alert": {
+      "prefix": ["park-i-alert", "park-alert"],
+      "body": [
+        "import { InfoIcon } from 'lucide-react'",
+        "import type { AlertProps } from '~/components/ui/alert'",
+        "import * as Alert from '~/components/ui/alert'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/alert"
+    },
+  
+    "Avatar": {
+      "prefix": ["park-i-avatar", "park-avatar"],
+      "body": [
+        "import { Avatar, type AvatarProps } from '~/components/ui/avatar'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/avatar"
+    },
+  
+    "Badge": {
+      "prefix": ["park-i-badge", "park-badge"],
+      "body": [
+        "import { Badge, type BadgeProps } from '~/components/ui/badge'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/badge"
+    },
+  
+    "Button": {
+      "prefix": ["park-i-button", "park-button"],
+      "body": [
+        "import { ArrowRightIcon } from 'lucide-react'",
+        "import { Button, type ButtonProps } from '~/components/ui/button'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/button"
+    },
+
+    "Card": {
+        "prefix": ["park-i-card", "park-card"],
+        "body": [
+            "import { Stack } from 'styled-system/jsx'",
+            "import { Button } from '~/components/ui/button'",
+            "import type { CardProps } from '~/components/ui/card'",
+            "import * as Card from '~/components/ui/card'",
+            "import { FormLabel } from '~/components/ui/form-label'",
+            "import { Input } from '~/components/ui/input'"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/card"
+      },
+
+    
+      "Carousel": {
+        "prefix": ["park-i-carousel", "park-carousel"],
+        "body": [
+            "import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'",
+            "import type { CarouselProps } from '~/components/ui/carousel'",
+            "import * as Carousel from '~/components/ui/carousel'",
+            "import { IconButton } from '~/components/ui/icon-button'"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/carousel"
+      },
+  
+    "Checkbox": {
+      "prefix": ["park-i-checkbox", "park-checkbox"],
+      "body": ["import type { CheckboxProps } from '@ark-ui/react'",
+      "import { Checkbox } from '~/components/ui/checkbox'"],
+      "description": "https://park-ui.com/docs/tailwind/components/checkbox"
+    },
+  
+    "Combobox": {
+      "prefix": ["park-i-combobox", "park-combobox"],
+      "body": [
+        "import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react'",
+        "import { useState } from 'react'",
+        "import type { ComboboxProps } from '~/components/ui/combobox'",
+        "import * as Combobox from '~/components/ui/combobox'",
+        "import { IconButton } from '~/components/ui/icon-button'",
+        "import { Input } from '~/components/ui/input'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/combobox"
+    },
+  
+    "DatePicker": {
+      "prefix": ["park-i-datepicker", "park-datepicker"],
+      "body": [
+        "import { CalendarIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'",
+        "import { Button } from '~/components/ui/button'",
+        "import type { DatePickerProps } from '~/components/ui/date-picker'",
+        "import * as DatePicker from '~/components/ui/date-picker'",
+        "import { IconButton } from '~/components/ui/icon-button'",
+        "import { Input } from '~/components/ui/input'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/date-picker"
+    },
+  
+    "Dialog": {
+      "prefix": ["park-i-dialog", "park-dialog"],
+      "body": [
+        "import { XIcon } from 'lucide-react'",
+        "import { Stack } from 'styled-system/jsx'",
+        "import { Button } from '~/components/ui/button'",
+        "import type { DialogProps } from '~/components/ui/dialog'",
+        "import * as Dialog from '~/components/ui/dialog'",
+        "import { IconButton } from '~/components/ui/icon-button'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/dialog"
+    },
+  
+    "Drawer": {
+      "prefix": ["park-i-drawer", "park-drawer"],
+      "body": [
+        "import { XIcon } from 'lucide-react'",
+        "import { Button } from '~/components/ui/button'",
+        "import type { DrawerProps } from '~/components/ui/drawer'",
+        "import * as Drawer from '~/components/ui/drawer'",
+        "import { IconButton } from '~/components/ui/icon-button'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/drawer"
+    },
+  
+    "Form Label": {
+      "prefix": ["park-i-form-label", "park-form-label"],
+      "body": [
+        "import { FormLabel, type FormLabelProps } from '~/components/ui/form-label'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/form-label"
+    },
+
+      
+    "Hover Card": {
+        "prefix": ["park-i-hover-card", "park-hover-card"],
+        "body": [
+            "import { MapPinIcon } from 'lucide-react'",
+            "import { HStack, Stack, styled } from 'styled-system/jsx'",
+            "import { Avatar } from '~/components/ui'",
+            "import type { HoverCardProps } from '~/components/ui/hover-card'",
+            "import * as HoverCard from '~/components/ui/hover-card'",
+            "import { Icon } from '~/components/ui/icon'",
+            "import { Text } from '~/components/ui/text'"
+          ""
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/hover-card"
+    },
+ 
+    "Icon": {
+        "prefix": ["park-i-icon", "park-icon"],
+        "body": [
+            "import { DiamondIcon } from 'lucide-react'",
+            "import { Icon, type IconProps } from '~/components/ui/icon'"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/icon"
+      },
+  
+    "Input": {
+      "prefix": ["park-i-input", "park-input"],
+      "body": [
+        "import { Stack } from 'styled-system/jsx'",
+        "import { FormLabel } from '~/components/ui/form-label'",
+        "import { Input, type InputProps } from '~/components/ui/input'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/input"
+    },
+  
+    "Menu": {
+      "prefix": ["park-i-menu", "park-menu"],
+      "body": [
+        "import {",
+        "  ChevronRightIcon,",
+        "  CreditCardIcon,",
+        "  LogOutIcon,",
+        "  MailIcon,",
+        "  MessageSquareIcon,",
+        "  PlusCircleIcon,",
+        "  SettingsIcon,",
+        "  UserIcon,",
+        "  UserPlusIcon,",
+        "} from 'lucide-react'",
+        "import { HStack } from 'styled-system/jsx'",
+        "import { Button } from '~/components/ui/button'",
+        "import type { MenuProps } from '~/components/ui/menu'",
+        "import * as Menu from '~/components/ui/menu'",
+        "import { Text } from '~/components/ui/text'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/menu"
+    },
+  
+    "Number Input": {
+      "prefix": ["park-i-number-input", "park-number-input"],
+      "body": [
+        "import type { NumberInputProps } from '@ark-ui/react'",
+        "import { NumberInput } from '~/components/ui/number-input'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/number-input"
+    },
+  
+    "Pagination": {
+      "prefix": ["park-i-pagination", "park-pagination"],
+      "body": [
+        "import { Pagination, type PaginationProps } from '~/components/ui/pagination'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components//pagination"
+    },
+
+    "Pin Input": {
+        "prefix": ["park-i-pin-input", "park-pin-input"],
+        "body": [
+        "import { PinInput, type PinInputProps } from '~/components/ui/pin-input'"
+          ""
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/pin-input"
+      },
+  
+    "Popover": {
+      "prefix": ["park-i-popover", "park-popover"],
+      "body": [
+        "import { XIcon } from 'lucide-react'",
+        "import { Box, Stack } from 'styled-system/jsx'",
+        "import { Button } from '~/components/ui/button'",
+        "import { IconButton } from '~/components/ui/icon-button'",
+        "import type { PopoverProps } from '~/components/ui/popover'",
+        "import * as Popover from '~/components/ui/popover'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/popover"
+    },
+
+    "Radio Button Group": {
+        "prefix": ["park-i-radio-button-group", "park-radio-button-group"],
+        "body": [
+            "import * as RadioButtonGroup from '~/components/ui/radio-button-group'",
+            "import type { RadioGroupProps } from '~/components/ui/radio-group'"
+          ""
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/radio-button-group"
+      },
+  
+    "Radio Group": {
+      "prefix": ["park-i-radio-group", "park-radio-group"],
+      "body": [
+        "import type { RadioGroupProps } from '~/components/ui/radio-group'",
+        "import * as RadioGroup from '~/components/ui/radio-group'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/radio-group"
+    },
+
+    "Rating Group": {
+        "prefix": ["park-i-rating-group", "park-rating-group"],
+        "body": [
+            "import { RatingGroup, type RatingGroupProps } from '~/components/ui/rating-group'",
+            "",
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/rating-group"
+      },
+  
+    "Segment Group": {
+      "prefix": ["park-i-segment-group", "park-segment-group"],
+      "body": [
+        "import type { SegmentGroupProps } from '~/components/ui/segment-group'",
+        "import * as SegmentGroup from '~/components/ui/segment-group'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/segment-group"
+    },
+  
+    "Select": {
+      "prefix": ["park-select"],
+      "body": [
+        "import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react'",
+        "import type { SelectProps } from '~/components/ui/select'",
+        "import * as Select from '~/components/ui/select'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/select"
+    },
+
+      
+    "Slider": {
+        "prefix": ["park-i-slider", "park-slider"],
+        "body": [
+            "import { Slider, type SliderProps } from '~/components/ui/slider'"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/slider"
+      },
+
+      "Switch": {
+        "prefix": ["park-i-switch", "park-switch"],
+        "body": [
+            "import type { SwitchProps } from '@ark-ui/react'",
+            "import { Switch } from '~/components/ui/switch'"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/switch"
+      },
+
+    "Table": {
+      "prefix": ["park-i-table", "park-table"],
+      "body": [
+        "import type { TableProps } from '~/components/ui/table'",
+        "import * as Table from '~/components/ui/table'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/table"
+    },
+  
+    "Tabs": {
+      "prefix": ["park-i-tabs", "park-tabs"],
+      "body": [
+        "import type { TabsProps } from '~/components/ui/tabs'",
+        "import * as Tabs from '~/components/ui/tabs'",
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/tabs"
+    },
+
+
+      
+    "Tags Input": {
+        "prefix": ["park-i-tags-input", "park-tags-input"],
+        "body": [
+            "import { XIcon } from 'lucide-react'",
+            "import { Button } from '~/components/ui/button'",
+            "import { IconButton } from '~/components/ui/icon-button'",
+            "import type { TagsInputProps } from '~/components/ui/tags-input'",
+            "import * as TagsInput from '~/components/ui/tags-input'"
+          ""
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/tags-input"
+      },
+  
+    "Textarea": {
+      "prefix": ["park-i-textarea", "park-textarea"],
+      "body": [
+        "import { Stack } from 'styled-system/jsx'",
+        "import { FormLabel } from '~/components/ui/form-label'",
+        "import { Textarea, type TextareaProps } from '~/components/ui/textarea'"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/textarea"
+    },
+
+    "Toast": {
+        "prefix": ["park-i-toast", "park-toast"],
+        "body": [
+            "import { createToaster } from '@ark-ui/react/toast'",
+            "import { XIcon } from 'lucide-react'",
+            "import { Button } from '~/components/ui/button'",
+            "import { IconButton } from '~/components/ui/icon-button'",
+            "import * as Toast from '~/components/ui/toast'"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/toast"
+      },
+  
+    "Switch": {
+      "prefix": ["park-i-switch", "park-switch"],
+      "body": [ "import type { SwitchProps } from '@ark-ui/react'",
+      "import { Switch } from '~/components/ui/switch'"],
+      "description": "https://park-ui.com/docs/tailwind/components/switch"
+    },
+  
+    "Toggle Group": {
+      "prefix": ["park-i-toggle-group", "park-toggle-group"],
+      "body": [
+        "import {",
+        "  AlignCenterIcon,",
+        "  AlignJustifyIcon,",
+        "  AlignLeftIcon,",
+        "  AlignRightIcon,",
+        "  BoldIcon,",
+        "  ItalicIcon,",
+        "  UnderlineIcon,",
+        "} from 'lucide-react'",
+        "import { Stack } from 'styled-system/jsx'",
+        "import type { ToggleGroupProps } from '~/components/ui/toggle-group'",
+        "import * as ToggleGroup from '~/components/ui/toggle-group'"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/toggle-group"
+    },
+
+    "Tooltip": {
+        "prefix": ["park-i-tooltip", "park-tooltip"],
+        "body": [
+            "import type { TooltipProps } from '~/components/ui/tooltip'",
+            "import * as Tooltip from '~/components/ui/tooltip'"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/tool-tip"
+      }
+  }

@@ -1,0 +1,936 @@
+{
+    "Accordion": {
+      "prefix": ["park-x-accordion", "park-ui-accordion"],
+      "body": [
+        " <Accordion.Root defaultValue={['React']} multiple {...props}>",
+        "      {items.map((item, id) => (",
+        "        <Accordion.Item key={id} value={item} disabled={item === 'Svelte'}>",
+        "          <Accordion.ItemTrigger>",
+        "            {item}",
+        "            <Accordion.ItemIndicator>",
+        "              <ChevronDownIcon />",
+        "            </Accordion.ItemIndicator>",
+        "          </Accordion.ItemTrigger>",
+        "          <Accordion.ItemContent>",
+        "            <div>",
+        "              Pudding donut gummies chupa chups oat cake marzipan biscuit tart. Dessert macaroon ice",
+        "              cream bonbon jelly. Jelly topping tiramisu halvah lollipop.",
+        "            </div>",
+        "          </Accordion.ItemContent>",
+        "        </Accordion.Item>",
+        "      ))}",
+        "    </Accordion.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/accordion"
+    },
+  
+    "Alert": {
+      "prefix": ["park-x-alert", "park-ui-alert"],
+      "body": [
+        " <Alert.Root {...props}>",
+        "      <Alert.Icon asChild>",
+        "        <InfoIcon />",
+        "      </Alert.Icon>",
+        "      <Alert.Content>",
+        "        <Alert.Title>Browser Update available</Alert.Title>",
+        "        <Alert.Description>For the best experience, please update your browser.</Alert.Description>",
+        "      </Alert.Content>",
+        "    </Alert.Root>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/alert"
+    },
+  
+    "Avatar": {
+      "prefix": ["park-x-avatar", "park-ui-avatar"],
+      "body": [
+        "<Avatar src=\"https://i.pravatar.cc/300\" name=\"John Doe\" {...props} />"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/avatar"
+    },
+  
+    "Badge": {
+      "prefix": ["park-x-badge", "park-ui-badge"],
+      "body": [
+        "<Badge {...props}>Park UI</Badge>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/badge"
+    },
+  
+    "Button": {
+      "prefix": ["park-x-button", "park-ui-button"],
+      "body": [
+        "   <Button {...props}>",
+        "      Button",
+        "      <ArrowRightIcon />",
+        "    </Button>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/button"
+    },
+
+    "Card": {
+        "prefix": ["park-x-card", "park-ui-card"],
+        "body": [
+            " <Card.Root width=\"sm\" {...props}>",
+            "      <Card.Header>",
+            "        <Card.Title>Team Members</Card.Title>",
+            "        <Card.Description>Add new members to your organisation.</Card.Description>",
+            "      </Card.Header>",
+            "      <Card.Body>",
+            "        <Stack gap=\"4\">",
+            "          <Stack gap=\"1.5\">",
+            "            <FormLabel htmlFor=\"name\">Name</FormLabel>",
+            "            <Input id=\"name\" placeholder=\"Name\" />",
+            "          </Stack>",
+            "          <Stack gap=\"1.5\">",
+            "            <FormLabel htmlFor=\"email\">Email</FormLabel>",
+            "            <Input id=\"email\" type=\"email\" placeholder=\"Email\" />",
+            "          </Stack>",
+            "        </Stack>",
+            "      </Card.Body>",
+            "      <Card.Footer gap=\"3\">",
+            "        <Button variant=\"outline\">Cancel</Button>",
+            "        <Button>Invite</Button>",
+            "      </Card.Footer>",
+            "    </Card.Root>"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/card"
+      },
+
+    
+      "Carousel": {
+        "prefix": ["park-x-carousel", "park-ui-carousel"],
+        "body": [
+            " <Carousel.Root {...props}>",
+            "      <Carousel.Viewport>",
+            "        <Carousel.ItemGroup>",
+            "          {images.map((image, index) => (",
+            "            <Carousel.Item key={index} index={index}>",
+            "              <img",
+            "                src={image}",
+            "                alt={`Slide Image ${index}`}",
+            "                style={{ height: '398px', width: '100%', objectFit: 'cover' }}",
+            "              />",
+            "            </Carousel.Item>",
+            "          ))}",
+            "        </Carousel.ItemGroup>",
+            "        <Carousel.Control>",
+            "          <Carousel.PrevTrigger asChild>",
+            "            <IconButton size=\"sm\" variant=\"link\" aria-label=\"Previous Slide\">",
+            "              <ChevronLeftIcon />",
+            "            </IconButton>",
+            "          </Carousel.PrevTrigger>",
+            "          <Carousel.IndicatorGroup>",
+            "            {images.map((_, index) => (",
+            "              <Carousel.Indicator",
+            "                key={index}",
+            "                index={index}",
+            "                aria-label={`Goto slide ${index + 1}`}",
+            "              />",
+            "            ))}",
+            "          </Carousel.IndicatorGroup>",
+            "          <Carousel.NextTrigger asChild>",
+            "            <IconButton size=\"sm\" variant=\"link\" aria-label=\"Next Slide\">",
+            "              <ChevronRightIcon />",
+            "            </IconButton>",
+            "          </Carousel.NextTrigger>",
+            "        </Carousel.Control>",
+            "      </Carousel.Viewport>",
+            "    </Carousel.Root>"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/carousel"
+      },
+  
+    "Checkbox": {
+      "prefix": ["park-x-checkbox", "park-ui-checkbox"],
+      "body": [
+        "  <Checkbox defaultChecked {...props}>",
+        "    Label",
+        "  </Checkbox>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/checkbox"
+    },
+  
+    "Combobox": {
+      "prefix": ["park-x-combobox", "park-ui-combobox"],
+      "body": [
+        " <Combobox.Root width=\"2xs\" onInputValueChange={handleChange} {...props} items={items}>",
+        "      <Combobox.Label>Framework</Combobox.Label>",
+        "      <Combobox.Control>",
+        "        <Combobox.Input placeholder=\"Select a Framework\" asChild>",
+        "          <Input />",
+        "        </Combobox.Input>",
+        "        <Combobox.Trigger asChild>",
+        "          <IconButton variant=\"link\" aria-label=\"open\" size=\"xs\">",
+        "            <ChevronsUpDownIcon />",
+        "          </IconButton>",
+        "        </Combobox.Trigger>",
+        "      </Combobox.Control>",
+        "      <Combobox.Positioner>",
+        "        <Combobox.Content>",
+        "          <Combobox.ItemGroup id=\"framework\">",
+        "            <Combobox.ItemGroupLabel htmlFor=\"framework\">Frameworks</Combobox.ItemGroupLabel>",
+        "            {items.map((item) => (",
+        "              <Combobox.Item key={item.value} item={item}>",
+        "                <Combobox.ItemText>{item.label}</Combobox.ItemText>",
+        "                <Combobox.ItemIndicator>",
+        "                  <CheckIcon />",
+        "                </Combobox.ItemIndicator>",
+        "              </Combobox.Item>",
+        "            ))}",
+        "          </Combobox.ItemGroup>",
+        "        </Combobox.Content>",
+        "      </Combobox.Positioner>",
+        "    </Combobox.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/combobox"
+    },
+  
+    "DatePicker": {
+      "prefix": ["park-x-datepicker", "park-ui-datepicker"],
+      "body": [
+        "  <DatePicker.Root",
+        "      positioning={{ sameWidth: true }}",
+        "      startOfWeek={1}",
+        "      selectionMode=\"range\"",
+        "      {...props}",
+        "    >",
+        "      <DatePicker.Label>Date Picker</DatePicker.Label>",
+        "      <DatePicker.Control>",
+        "        <DatePicker.Input asChild>",
+        "          <Input />",
+        "        </DatePicker.Input>",
+        "        <DatePicker.Trigger asChild>",
+        "          <IconButton variant=\"outline\" aria-label=\"Open date picker\">",
+        "            <CalendarIcon />",
+        "          </IconButton>",
+        "        </DatePicker.Trigger>",
+        "      </DatePicker.Control>",
+        "      <DatePicker.Positioner>",
+        "        <DatePicker.Content>",
+        "          <DatePicker.View view=\"day\">",
+        "            {(api) => (",
+        "              <>",
+        "                <DatePicker.ViewControl>",
+        "                  <DatePicker.PrevTrigger asChild>",
+        "                    <IconButton variant=\"ghost\" size=\"sm\">",
+        "                      <ChevronLeftIcon />",
+        "                    </IconButton>",
+        "                  </DatePicker.PrevTrigger>",
+        "                  <DatePicker.ViewTrigger asChild>",
+        "                    <Button variant=\"ghost\" size=\"sm\">",
+        "                      <DatePicker.RangeText />",
+        "                    </Button>",
+        "                  </DatePicker.ViewTrigger>",
+        "                  <DatePicker.NextTrigger asChild>",
+        "                    <IconButton variant=\"ghost\" size=\"sm\">",
+        "                      <ChevronRightIcon />",
+        "                    </IconButton>",
+        "                  </DatePicker.NextTrigger>",
+        "                </DatePicker.ViewControl>",
+        "                <DatePicker.Table>",
+        "                  <DatePicker.TableHead>",
+        "                    <DatePicker.TableRow>",
+        "                      {api.weekDays.map((weekDay, id) => (",
+        "                        <DatePicker.TableHeader key={id}>{weekDay.narrow}</DatePicker.TableHeader>",
+        "                      ))}",
+        "                    </DatePicker.TableRow>",
+        "                  </DatePicker.TableHead>",
+        "                  <DatePicker.TableBody>",
+        "                    {api.weeks.map((week, id) => (",
+        "                      <DatePicker.TableRow key={id}>",
+        "                        {week.map((day, id) => (",
+        "                          <DatePicker.TableCell key={id} value={day}>",
+        "                            <DatePicker.TableCellTrigger asChild>",
+        "                              <IconButton variant=\"ghost\">{day.day}</IconButton>",
+        "                            </DatePicker.TableCellTrigger>",
+        "                          </DatePicker.TableCell>",
+        "                        ))}",
+        "                      </DatePicker.TableRow>",
+        "                    ))}",
+        "                  </DatePicker.TableBody>",
+        "                </DatePicker.Table>",
+        "              </>",
+        "            )}",
+        "          </DatePicker.View>",
+        "          <DatePicker.View view=\"month\">",
+        "            {(api) => (",
+        "              <>",
+        "                <DatePicker.ViewControl>",
+        "                  <DatePicker.PrevTrigger asChild>",
+        "                    <IconButton variant=\"ghost\" size=\"sm\">",
+        "                      <ChevronLeftIcon />",
+        "                    </IconButton>",
+        "                  </DatePicker.PrevTrigger>",
+        "                  <DatePicker.ViewTrigger asChild>",
+        "                    <Button variant=\"ghost\" size=\"sm\">",
+        "                      <DatePicker.RangeText />",
+        "                    </Button>",
+        "                  </DatePicker.ViewTrigger>",
+        "                  <DatePicker.NextTrigger asChild>",
+        "                    <IconButton variant=\"ghost\" size=\"sm\">",
+        "                      <ChevronRightIcon />",
+        "                    </IconButton>",
+        "                  </DatePicker.NextTrigger>",
+        "                </DatePicker.ViewControl>",
+        "                <DatePicker.Table>",
+        "                  <DatePicker.TableBody>",
+        "                    {api.getMonthsGrid({ columns: 4, format: 'short' }).map((months, id) => (",
+        "                      <DatePicker.TableRow key={id}>",
+        "                        {months.map((month, id) => (",
+        "                          <DatePicker.TableCell key={id} value={month.value}>",
+        "                            <DatePicker.TableCellTrigger asChild>",
+        "                              <Button variant=\"ghost\">{month.label}</Button>",
+        "                            </DatePicker.TableCellTrigger>",
+        "                          </DatePicker.TableCell>",
+        "                        ))}",
+        "                      </DatePicker.TableRow>",
+        "                    ))}",
+        "                  </DatePicker.TableBody>",
+        "                </DatePicker.Table>",
+        "              </>",
+        "            )}",
+        "          </DatePicker.View>",
+        "          <DatePicker.View view=\"year\">",
+        "            {(api) => (",
+        "              <>",
+        "                <DatePicker.ViewControl>",
+        "                  <DatePicker.PrevTrigger asChild>",
+        "                    <IconButton variant=\"ghost\" size=\"sm\">",
+        "                      <ChevronLeftIcon />",
+        "                    </IconButton>",
+        "                  </DatePicker.PrevTrigger>",
+        "                  <DatePicker.ViewTrigger asChild>",
+        "                    <Button variant=\"ghost\" size=\"sm\">",
+        "                      <DatePicker.RangeText />",
+        "                    </Button>",
+        "                  </DatePicker.ViewTrigger>",
+        "                  <DatePicker.NextTrigger asChild>",
+        "                    <IconButton variant=\"ghost\" size=\"sm\">",
+        "                      <ChevronRightIcon />",
+        "                    </IconButton>",
+        "                  </DatePicker.NextTrigger>",
+        "                </DatePicker.ViewControl>",
+        "                <DatePicker.Table>",
+        "                  <DatePicker.TableBody>",
+        "                    {api.getYearsGrid({ columns: 4 }).map((years, id) => (",
+        "                      <DatePicker.TableRow key={id}>",
+        "                        {years.map((year, id) => (",
+        "                          <DatePicker.TableCell key={id} value={year.value}>",
+        "                            <DatePicker.TableCellTrigger asChild>",
+        "                              <Button variant=\"ghost\">{year.label}</Button>",
+        "                            </DatePicker.TableCellTrigger>",
+        "                          </DatePicker.TableCell>",
+        "                        ))}",
+        "                      </DatePicker.TableRow>",
+        "                    ))}",
+        "                  </DatePicker.TableBody>",
+        "                </DatePicker.Table>",
+        "              </>",
+        "            )}",
+        "          </DatePicker.View>",
+        "        </DatePicker.Content>",
+        "      </DatePicker.Positioner>",
+        "    </DatePicker.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/date-picker"
+    },
+  
+    "Dialog": {
+      "prefix": ["park-x-dialog", "park-ui-dialog"],
+      "body": [
+        "   <Dialog.Root {...props}>",
+        "      <Dialog.Trigger asChild>",
+        "        <Button>Open Dialog</Button>",
+        "      </Dialog.Trigger>",
+        "      <Dialog.Backdrop />",
+        "      <Dialog.Positioner>",
+        "        <Dialog.Content>",
+        "          <Stack gap=\"8\" p=\"6\">",
+        "            <Stack gap=\"1\">",
+        "              <Dialog.Title>Dialog Title</Dialog.Title>",
+        "              <Dialog.Description>Dialog Description</Dialog.Description>",
+        "            </Stack>",
+        "            <Stack gap=\"3\" direction=\"row\" width=\"full\">",
+        "              <Dialog.CloseTrigger asChild>",
+        "                <Button variant=\"outline\" width=\"full\">",
+        "                  Cancel",
+        "                </Button>",
+        "              </Dialog.CloseTrigger>",
+        "              <Button width=\"full\">Confirm</Button>",
+        "            </Stack>",
+        "          </Stack>",
+        "          <Dialog.CloseTrigger asChild position=\"absolute\" top=\"2\" right=\"2\">",
+        "            <IconButton aria-label=\"Close Dialog\" variant=\"ghost\" size=\"sm\">",
+        "              <XIcon />",
+        "            </IconButton>",
+        "          </Dialog.CloseTrigger>",
+        "        </Dialog.Content>",
+        "      </Dialog.Positioner>",
+        "    </Dialog.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/dialog"
+    },
+  
+    "Drawer": {
+      "prefix": ["park-x-drawer", "park-ui-drawer"],
+      "body": [
+        "   <Drawer.Root {...props}>",
+        "      <Drawer.Trigger asChild>",
+        "        <Button>Open Drawer</Button>",
+        "      </Drawer.Trigger>",
+        "      <Drawer.Backdrop />",
+        "      <Drawer.Positioner>",
+        "        <Drawer.Content>",
+        "          <Drawer.Header>",
+        "            <Drawer.Title>Title</Drawer.Title>",
+        "            <Drawer.Description>Description</Drawer.Description>",
+        "            <Drawer.CloseTrigger asChild position=\"absolute\" top=\"3\" right=\"4\">",
+        "              <IconButton variant=\"ghost\">",
+        "                <XIcon />",
+        "              </IconButton>",
+        "            </Drawer.CloseTrigger>",
+        "          </Drawer.Header>",
+        "          <Drawer.Body>{/* Content */}</Drawer.Body>",
+        "          <Drawer.Footer gap=\"3\">",
+        "            <Drawer.CloseTrigger asChild>",
+        "              <Button variant=\"outline\">Cancel</Button>",
+        "            </Drawer.CloseTrigger>",
+        "            <Button>Primary</Button>",
+        "          </Drawer.Footer>",
+        "        </Drawer.Content>",
+        "      </Drawer.Positioner>",
+        "    </Drawer.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/drawer"
+    },
+  
+    "Form Label": {
+      "prefix": ["park-x-form-label", "park-ui-form-label"],
+      "body": [
+        "<FormLabel {...props}>I'm a label</FormLabel>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/form-label"
+    },
+
+      
+    "Hover Card": {
+        "prefix": ["park-x-hover-card", "park-ui-hover-card"],
+        "body": [
+            "  <HoverCard.Root {...props}>",
+            "    <HoverCard.Trigger asChild>",
+            "      <styled.a",
+            "        href=\"https://twitter.com/grizzly_codes/\"",
+            "        target=\"_blank\"",
+            "        textStyle=\"sm\"",
+            "        fontWeight=\"medium\"",
+            "      >",
+            "        @grizzly_codes",
+            "      </styled.a>",
+            "    </HoverCard.Trigger>",
+            "",
+            "    <HoverCard.Positioner>",
+            "      <HoverCard.Content>",
+            "        <HoverCard.Arrow>",
+            "          <HoverCard.ArrowTip />",
+            "        </HoverCard.Arrow>",
+            "        <Stack gap=\"4\" direction=\"row\">",
+            "          <Avatar name=\"Christian Schröter\" src=\"https://avatars.githubusercontent.com/u/1846056\" />",
+            "          <Stack gap=\"3\">",
+            "            <Stack gap=\"1\">",
+            "              <Text textStyle=\"sm\" fontWeight=\"semibold\">",
+            "                @grizzly_codes",
+            "              </Text>",
+            "              <Text textStyle=\"sm\" color=\"fg.muted\">",
+            "                Staff Software Engineer working at vivenu GmbH",
+            "              </Text>",
+            "            </Stack>",
+            "            <HStack gap=\"1\" color=\"fg.subtle\" textStyle=\"xs\">",
+            "              <Icon>",
+            "                <MapPinIcon />",
+            "              </Icon>",
+            "              <Text>Joined Dezember 2011</Text>",
+            "            </HStack>",
+            "          </Stack>",
+            "        </Stack>",
+            "      </HoverCard.Content>",
+            "    </HoverCard.Positioner>",
+            "  </HoverCard.Root>",
+          ""
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/hover-card"
+    },
+    "Icon": {
+        "prefix": ["park-x-icon", "park-ui-icon"],
+        "body": [
+            "    <Icon {...props}>",
+            "      <DiamondIcon />",
+            "    </Icon>"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/icon"
+      },
+  
+    "Input": {
+      "prefix": ["park-x-input", "park-ui-input"],
+      "body": [
+        "  <Stack gap=\"1.5\" width=\"2xs\">",
+        "      <FormLabel htmlFor=\"name\">Name</FormLabel>",
+        "      <Input id=\"name\" placeholder=\"Your Name\" {...props} />",
+        "    </Stack>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/input"
+    },
+  
+    "Menu": {
+      "prefix": ["park-x-menu", "park-ui-menu"],
+      "body": [
+        "  <Menu.Root {...props}>",
+        "      <Menu.Trigger asChild>",
+        "        <Button variant=\"outline\" size={props.size}>",
+        "          Open Menu",
+        "        </Button>",
+        "      </Menu.Trigger>",
+        "      <Menu.Positioner>",
+        "        <Menu.Content>",
+        "          <Menu.ItemGroup id=\"group-1\">",
+        "            <Menu.ItemGroupLabel htmlFor=\"group-1\">My Account</Menu.ItemGroupLabel>",
+        "            <Menu.Separator />",
+        "            <Menu.Item id=\"profile\">",
+        "              <HStack gap=\"6\" justify=\"space-between\" flex=\"1\">",
+        "                <HStack gap=\"2\">",
+        "                  <UserIcon />",
+        "                  Profile",
+        "                </HStack>",
+        "                <Text as=\"span\" color=\"fg.subtle\" textStyle=\"xs\">",
+        "                  ⇧⌘P",
+        "                </Text>",
+        "              </HStack>",
+        "            </Menu.Item>",
+        "            <Menu.Item id=\"billing\">",
+        "              <HStack gap=\"2\">",
+        "                <CreditCardIcon /> Billing",
+        "              </HStack>",
+        "            </Menu.Item>",
+        "            <Menu.Item id=\"settings\">",
+        "              <HStack gap=\"6\" justify=\"space-between\" flex=\"1\">",
+        "                <HStack gap=\"2\">",
+        "                  <SettingsIcon /> Settings",
+        "                </HStack>",
+        "                <Text as=\"span\" color=\"fg.subtle\" textStyle=\"xs\">",
+        "                  ⌘,",
+        "                </Text>",
+        "              </HStack>",
+        "            </Menu.Item>",
+        "            <Menu.Root positioning={{ placement: 'right-start', gutter: -2 }} {...props}>",
+        "              <Menu.TriggerItem justifyContent=\"space-between\">",
+        "                <HStack gap=\"2\">",
+        "                  <UserPlusIcon />",
+        "                  Invite member",
+        "                </HStack>",
+        "                <ChevronRightIcon />",
+        "              </Menu.TriggerItem>",
+        "              <Menu.Positioner>",
+        "                <Menu.Content>",
+        "                  <Menu.Item id=\"email\">",
+        "                    <HStack gap=\"2\">",
+        "                      <MailIcon /> Email",
+        "                    </HStack>",
+        "                  </Menu.Item>",
+        "                  <Menu.Item id=\"message\">",
+        "                    <HStack gap=\"2\">",
+        "                      <MessageSquareIcon /> Message",
+        "                    </HStack>",
+        "                  </Menu.Item>",
+        "                  <Menu.Separator />",
+        "                  <Menu.Item id=\"other\">",
+        "                    <HStack gap=\"2\">",
+        "                      <PlusCircleIcon />",
+        "                      More Options...",
+        "                    </HStack>",
+        "                  </Menu.Item>",
+        "                </Menu.Content>",
+        "              </Menu.Positioner>",
+        "            </Menu.Root>",
+        "            <Menu.Separator />",
+        "            <Menu.Item id=\"logout\">",
+        "              <HStack gap=\"2\">",
+        "                <LogOutIcon />",
+        "                Logout",
+        "              </HStack>",
+        "            </Menu.Item>",
+        "          </Menu.ItemGroup>",
+        "        </Menu.Content>",
+        "      </Menu.Positioner>",
+        "    </Menu.Root>"
+    
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/menu"
+    },
+  
+    "Number Input": {
+      "prefix": ["park-x-number-input", "park-ui-number-input"],
+      "body": [
+        "    <NumberInput defaultValue=\"3\" {...props}>",
+        "      Label",
+        "    </NumberInput>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/number-input"
+    },
+  
+    "Pagination": {
+      "prefix": ["park-x-pagination", "park-ui-pagination"],
+      "body": [
+        " <Pagination {...props} count={90} pageSize={10} siblingCount={1} defaultPage={2} />"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/pagination"
+    },
+
+    "Pin Input": {
+        "prefix": ["park-x-pin-input", "park-ui-pin-input"],
+        "body": [
+            "  <PinInput placeholder=\"0\" onValueComplete={(e) => alert(e.valueAsString)} {...props}>",
+            "    Pin Input",
+            "  </PinInput>"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/pin-input"
+      },
+  
+    "Popover": {
+      "prefix": ["park-x-popover", "park-ui-popover"],
+      "body": [
+        "  <Popover.Root {...props}>",
+        "    <Popover.Trigger asChild>",
+        "      <Button>Open Popover</Button>",
+        "    </Popover.Trigger>",
+        "    <Popover.Positioner>",
+        "      <Popover.Content>",
+        "        <Popover.Arrow>",
+        "          <Popover.ArrowTip />",
+        "        </Popover.Arrow>",
+        "        <Stack gap=\"1\">",
+        "          <Popover.Title>Favorite Framework</Popover.Title>",
+        "          <Popover.Description>",
+        "            Tell us what is your favorite framework and why you love to use it.",
+        "          </Popover.Description>",
+        "        </Stack>",
+        "        <Box position=\"absolute\" top=\"1\" right=\"1\">",
+        "          <Popover.CloseTrigger asChild>",
+        "            <IconButton aria-label=\"Close Popover\" variant=\"ghost\" size=\"sm\">",
+        "              <XIcon />",
+        "            </IconButton>",
+        "          </Popover.CloseTrigger>",
+        "        </Box>",
+        "      </Popover.Content>",
+        "    </Popover.Positioner>",
+        "  </Popover.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/popover"
+    },
+
+    "Radio Button Group": {
+        "prefix": ["park-x-radio-button-group", "park-ui-radio-button-group"],
+        "body": [
+            "  <RadioButtonGroup.Root defaultValue=\"M\" {...props}>",
+            "      {options.map((option, id) => (",
+            "        <RadioButtonGroup.Item key={id} value={option.value} disabled={option.disabled} px=\"0\">",
+            "          <RadioButtonGroup.ItemControl />",
+            "          <RadioButtonGroup.ItemText>{option.value}</RadioButtonGroup.ItemText>",
+            "        </RadioButtonGroup.Item>",
+            "      ))}",
+            "    </RadioButtonGroup.Root>"
+          ""
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/radio-button-group"
+      },
+  
+    "Radio Group": {
+      "prefix": ["park-x-radio-group", "park-ui-radio-group"],
+      "body": [
+        " <RadioGroup.Root defaultValue=\"react\" {...props}>",
+        "      {options.map((option) => (",
+        "        <RadioGroup.Item key={option.id} value={option.id} disabled={option.disabled}>",
+        "          <RadioGroup.ItemControl />",
+        "          <RadioGroup.ItemText>{option.label}</RadioGroup.ItemText>",
+        "        </RadioGroup.Item>",
+        "      ))}",
+        "    </RadioGroup.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/radio-group"
+    },
+
+    "Rating Group": {
+        "prefix": ["park-x-rating-group", "park-ui-rating-group"],
+        "body": [
+            "   <RatingGroup defaultValue={3} {...props}>",
+            "      Label",
+            "    </RatingGroup>"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/rating-group"
+      },
+  
+    "Segment Group": {
+      "prefix": ["park-x-segment-group", "park-ui-segment-group"],
+      "body": [
+        "<SegmentGroup.Root defaultValue=\"customers\" {...props}>",
+        "      {options.map((option) => (",
+        "        <SegmentGroup.Item key={option.id} value={option.id} disabled={option.disabled}>",
+        "          <SegmentGroup.ItemControl />",
+        "          <SegmentGroup.ItemText>{option.label}</SegmentGroup.ItemText>",
+        "        </SegmentGroup.Item>",
+        "      ))}",
+        "      <SegmentGroup.Indicator />",
+        "    </SegmentGroup.Root>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/segment-group"
+    },
+  
+    "Select": {
+      "prefix": ["park-x-select", "park-ui-select"],
+      "body": [
+        "  <Select.Root positioning={{ sameWidth: true }} width=\"2xs\" {...props} items={items}>",
+        "      <Select.Label>Framework</Select.Label>",
+        "      <Select.Control>",
+        "        <Select.Trigger>",
+        "          <Select.ValueText placeholder=\"Select a Framework\" />",
+        "          <ChevronsUpDownIcon />",
+        "        </Select.Trigger>",
+        "      </Select.Control>",
+        "      <Select.Positioner>",
+        "        <Select.Content>",
+        "          <Select.ItemGroup id=\"framework\">",
+        "            <Select.ItemGroupLabel htmlFor=\"framework\">Framework</Select.ItemGroupLabel>",
+        "            {items.map((item) => (",
+        "              <Select.Item key={item.value} item={item}>",
+        "                <Select.ItemText>{item.label}</Select.ItemText>",
+        "                <Select.ItemIndicator>",
+        "                  <CheckIcon />",
+        "                </Select.ItemIndicator>",
+        "              </Select.Item>",
+        "            ))}",
+        "          </Select.ItemGroup>",
+        "        </Select.Content>",
+        "      </Select.Positioner>",
+        "    </Select.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/select"
+    },
+
+    "Slider": {
+        "prefix": ["park-x-slider", "park-ui-slider"],
+        "body": [
+            "   <Slider",
+            "      value={[33]}",
+            "      marks={[",
+            "        { value: 25, label: '25' },",
+            "        { value: 50, label: '50' },",
+            "        { value: 75, label: '75' },",
+            "      ]}",
+            "      {...props}",
+            "    />"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/slider"
+      },
+
+      "Switch": {
+        "prefix": ["park-x-switch", "park-ui-switch"],
+        "body": [
+            "  <Switch defaultChecked {...props}>",
+            "    Label",
+            "  </Switch>"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/switch"
+      },
+
+    "Table": {
+      "prefix": ["park-x-table", "park-ui-table"],
+      "body": [
+        "   <Table.Root {...props}>",
+        "      <Table.Caption>Product Inventory</Table.Caption>",
+        "      <Table.Head>",
+        "        <Table.Row>",
+        "          <Table.Header>ID</Table.Header>",
+        "          <Table.Header>Name</Table.Header>",
+        "          <Table.Header>Stock</Table.Header>",
+        "          <Table.Header textAlign=\"right\">Price</Table.Header>",
+        "        </Table.Row>",
+        "      </Table.Head>",
+        "      <Table.Body>",
+        "        {productData.map((product, index) => (",
+        "          <Table.Row key={index}>",
+        "            <Table.Cell fontWeight=\"medium\">{product.id}</Table.Cell>",
+        "            <Table.Cell>{product.name}</Table.Cell>",
+        "            <Table.Cell>{product.stock}</Table.Cell>",
+        "            <Table.Cell textAlign=\"right\">{product.price}</Table.Cell>",
+        "          </Table.Row>",
+        "        ))}",
+        "      </Table.Body>",
+        "      <Table.Footer>",
+        "        <Table.Row>",
+        "          <Table.Cell colSpan={2}>Totals</Table.Cell>",
+        "          <Table.Cell>87</Table.Cell>",
+        "          <Table.Cell textAlign=\"right\">$34,163.00</Table.Cell>",
+        "        </Table.Row>",
+        "      </Table.Footer>",
+        "    </Table.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/table"
+    },
+  
+    "Tabs": {
+      "prefix": ["park-x-tabs", "park-ui-tabs"],
+      "body": [
+        " <Tabs.Root defaultValue=\"react\" {...props}>",
+        "      <Tabs.List>",
+        "        {options.map((option) => (",
+        "          <Tabs.Trigger key={option.id} value={option.id} disabled={option.disabled}>",
+        "            {option.label}",
+        "          </Tabs.Trigger>",
+        "        ))}",
+        "        <Tabs.Indicator />",
+        "      </Tabs.List>",
+        "      <Tabs.Content value=\"react\">Know React? Check out Solid!</Tabs.Content>",
+        "      <Tabs.Content value=\"solid\">Know Solid? Check out Svelte!</Tabs.Content>",
+        "      <Tabs.Content value=\"svelte\">Know Svelte? Check out Vue!</Tabs.Content>",
+        "      <Tabs.Content value=\"vue\">Know Vue? Check out React!</Tabs.Content>",
+        "    </Tabs.Root>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/tabs"
+    },
+
+
+      
+    "Tags Input": {
+        "prefix": ["park-x-tags-input", "park-ui-tags-input"],
+        "body": [
+            "  <TagsInput.Root defaultValue={['React', 'Solid', 'Vue']} maxW=\"xs\" {...props}>",
+            "      {(api) => (",
+            "        <>",
+            "          <TagsInput.Label>Frameworks</TagsInput.Label>",
+            "          <TagsInput.Control>",
+            "            {api.value.map((value, index) => (",
+            "              <TagsInput.Item key={index} index={index} value={value}>",
+            "                <TagsInput.ItemText>{value}</TagsInput.ItemText>",
+            "                <TagsInput.ItemDeleteTrigger asChild>",
+            "                  <IconButton variant=\"link\" size=\"xs\">",
+            "                    <XIcon />",
+            "                  </IconButton>",
+            "                </TagsInput.ItemDeleteTrigger>",
+            "                <TagsInput.ItemInput />",
+            "              </TagsInput.Item>",
+            "            ))}",
+            "            <TagsInput.Input placeholder=\"Add Framework\" />",
+            "          </TagsInput.Control>",
+            "          <TagsInput.ClearTrigger asChild>",
+            "            <Button variant=\"outline\">Clear</Button>",
+            "          </TagsInput.ClearTrigger>",
+            "        </>",
+            "      )}",
+            "    </TagsInput.Root>"
+          ""
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/tags-input"
+      },
+  
+    "Textarea": {
+      "prefix": ["park-x-textarea", "park-ui-textarea"],
+      "body": [
+        " <Stack gap=\"1.5\" width=\"2xs\">",
+        "      <FormLabel htmlFor=\"description\">Description</FormLabel>",
+        "      <Textarea id=\"description\" rows={4} {...props} />",
+        "    </Stack>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/textarea"
+    },
+
+    "Toast": {
+        "prefix": ["park-x-toast", "park-ui-toast"],
+        "body": [
+            "const [Toaster, toast] = createToaster({",
+            "  placement: 'top-end',",
+            "  render(toast) {",
+            "    return (",
+            "      <Toast.Root>",
+            "        <Toast.Title>{toast.title}</Toast.Title>",
+            "        <Toast.Description>{toast.description}</Toast.Description>",
+            "        <Toast.CloseTrigger asChild>",
+            "          <IconButton size=\"sm\" variant=\"link\">",
+            "            <XIcon />",
+            "          </IconButton>",
+            "        </Toast.CloseTrigger>",
+            "      </Toast.Root>",
+            "    )",
+            "  },",
+            "})"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/toast"
+      },
+  
+    "Toggle Group": {
+      "prefix": ["park-i-toggle-group", "park-ui-toggle-group"],
+      "body": [
+        " <Stack",
+        "      direction={props.orientation === 'horizontal' ? 'row' : 'column'}",
+        "      gap=\"3\"",
+        "      borderRadius=\"l3\"",
+        "      borderWidth={props.variant === 'ghost' ? '1px' : '0'}",
+        "      p={props.variant === 'ghost' ? '1' : '0'}",
+        "    >",
+        "      <ToggleGroup.Root multiple {...props}>",
+        "        <ToggleGroup.Item value=\"bold\" aria-label=\"Toggle Bold\">",
+        "          <BoldIcon />",
+        "        </ToggleGroup.Item>",
+        "        <ToggleGroup.Item value=\"italic\" aria-label=\"Toggle Italic\">",
+        "          <ItalicIcon />",
+        "        </ToggleGroup.Item>",
+        "        <ToggleGroup.Item value=\"underline\" aria-label=\"Toggle Underline\">",
+        "          <UnderlineIcon />",
+        "        </ToggleGroup.Item>",
+        "      </ToggleGroup.Root>",
+        "      <ToggleGroup.Root defaultValue={['left']} {...props}>",
+        "        <ToggleGroup.Item value=\"left\" aria-label=\"Align Left\">",
+        "          <AlignLeftIcon />",
+        "        </ToggleGroup.Item>",
+        "        <ToggleGroup.Item value=\"center\" aria-label=\"Align Center\">",
+        "          <AlignCenterIcon />",
+        "        </ToggleGroup.Item>",
+        "        <ToggleGroup.Item value=\"right\" aria-label=\"Align Right\">",
+        "          <AlignRightIcon />",
+        "        </ToggleGroup.Item>",
+        "        <ToggleGroup.Item value=\"justify\" aria-label=\"Align Justify\">",
+        "          <AlignJustifyIcon />",
+        "        </ToggleGroup.Item>",
+        "      </ToggleGroup.Root>",
+        "    </Stack>"
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/toggle-group"
+    },
+
+    "Tooltip": {
+        "prefix": ["park-x-tooltip", "park-ui-tooltip"],
+        "body": [
+            "<Tooltip.Root {...props}>",
+            "    <Tooltip.Trigger>Hover Me</Tooltip.Trigger>",
+            "    <Tooltip.Positioner>",
+            "      <Tooltip.Arrow>",
+            "        <Tooltip.ArrowTip />",
+            "      </Tooltip.Arrow>",
+            "      <Tooltip.Content>I am a Tooltip!</Tooltip.Content>",
+            "    </Tooltip.Positioner>",
+            "  </Tooltip.Root>"
+        ],
+        "description": "https://park-ui.com/docs/tailwind/components/tool-tip"
+      }
+  }

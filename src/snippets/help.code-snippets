@@ -1,0 +1,25 @@
+{
+    "park/ui help cn": {
+      "prefix": ["park-ui-help"],
+      "body": [
+        "// park-ui-[component] e.g. park-ui-button",
+        "import { Button } from \"@/components/ui/button\"",
+        "",
+        "// park-[component] e.g. park-button",
+        "<Button> Submit </Button>",
+        ""
+      ]
+    },
+  
+    "park/ui help park-ui": {
+      "prefix": ["park-ui-help"],
+      "body": [
+        "// park-i-[component] e.g. park-i-button",
+        "import { Button } from \"@/components/ui/button\"",
+        "",
+        "// park-x-[component] e.g. park-x-button",
+        "<Button> Submit </Button>",
+        ""
+      ]
+    }
+  }
