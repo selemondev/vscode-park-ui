@@ -290,6 +290,16 @@
       "description": "https://park-ui.com/docs/tailwind/components/select"
     },
 
+    "Skeleton": {
+      "prefix": ["park-skeleton"],
+      "body": [
+        "import { Circle, HStack, Stack } from 'styled-system/jsx'",
+        "import { Skeleton, type SkeletonProps } from '~/components/ui/skeleton'",
+        ""
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/skeleton"
+    },
+
       
     "Slider": {
         "prefix": ["park-i-slider", "park-slider"],
