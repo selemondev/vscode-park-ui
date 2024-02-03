@@ -92,11 +92,11 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run build",
+    "vscode:prepublish": "pnpm build",
+    "generate:release": "npx changelogen@latest --release",
     "build": "tsup",
     "dev": "pnpm build -- --watch",
     "deploy": "vsce publish --no-dependencies",
-    "release": "pnpm vscode:prepublish && bumpp --commit --push && pnpm deploy",
     "lint": "eslint src --ext ts"
   },
   "devDependencies": {
