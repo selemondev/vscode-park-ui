@@ -725,6 +725,23 @@
       "description": "https://park-ui.com/docs/tailwind/components/select"
     },
 
+    "Skeleton": {
+      "prefix": ["park-x-skeleton", "park-ui-skeleton"],
+      "body": [
+        " <HStack width=\"full\" gap=\"4\">",
+        "      <Skeleton borderRadius=\"full\">",
+        "        <Circle size=\"20\" />",
+        "      </Skeleton>",
+        "      <Stack gap=\"3.5\" width=\"full\">",
+        "        <Skeleton h=\"4\" />",
+        "        <Skeleton h=\"4\" width=\"80%\" />",
+        "        <Skeleton h=\"4\" width=\"60%\" />",
+        "      </Stack>",
+        "    </HStack>"
+      ],
+      "description": "https://park-ui.com/docs/tailwind/components/skeleton"
+    },
+
     "Slider": {
         "prefix": ["park-x-slider", "park-ui-slider"],
         "body": [
